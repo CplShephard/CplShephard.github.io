@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CplShephard · GitHub Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-lambda">λ</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-text">LOADING PROFILE...</div>
+</div>
+
+<!-- BACKGROUND -->
+<div id="grid-bg"></div>
+<div id="lambda-rain"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">CplShephard</div>
+  <ul class="nav-links">
+    <li><a href="#profile-section">PROFILE</a></li>
+    <li><a href="#repos-section">REPOS</a></li>
+    <li><a href="#friends-section">FRIENDS</a></li>
+    <li><a href="https://github.com/CplShephard" target="_blank">GITHUB ↗</a></li>
+  </ul>
+</nav>
+
+<!-- PROFILE BANNER -->
+<section id="profile-section">
+
+  <div class="site-banner">
+    <div class="site-banner-img-wrap">
+      <div class="site-banner-overlay"></div>
+    </div>
+    <div class="site-banner-content">
+      <div class="site-banner-breadcrumb">GitHub Profile</div>
+      <div class="site-banner-title-row">
+        <img id="bannerAvatar" src="https://avatars.githubusercontent.com/CplShephard" alt="CplShephard" class="site-banner-logo" onerror="this.style.display='none'">
+        <h1 class="site-banner-title" id="bannerName">CplShephard</h1>
+      </div>
+      <div class="site-banner-desc" id="bannerBio">Loading bio…</div>
+    </div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="stats-row glass reveal">
+    <div class="stat-item">
+      <div class="stat-value" id="statRepos">—</div>
+      <div class="stat-label">Public Repos</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-value" id="statFollowers">—</div>
+      <div class="stat-label">Followers</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-value" id="statFollowing">—</div>
+      <div class="stat-label">Following</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-value" id="statYear">—</div>
+      <div class="stat-label">Member Since</div>
+    </div>
+  </div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- REPOS SECTION -->
+<section id="repos-section">
+  <div class="section-header reveal">
+    <div class="section-lambda">λ</div>
+    <h2 class="section-title">Public Repositories</h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="repos-grid" id="reposGrid">
+    <div class="loading-repos">
+      <span class="loader-lambda-sm">λ</span>
+      <p>Fetching repositories…</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FRIENDS SECTION -->
+<section id="friends-section">
+  <div class="section-header reveal">
+    <div class="section-lambda">λ</div>
+    <h2 class="section-title">En İyi Dostlarım</h2>
+    <div class="section-rule"></div>
+  </div>
+
+  <div class="devs-grid" id="friendsGrid">
+    <!-- Dynamically populated -->
+  </div>
+</section>
+
+<footer>
+  <span class="footer-lambda" aria-hidden="true">λ</span>
+  <div class="footer-text">
+    CplShephard · GitHub Profile<br>
+    Powered by GitHub API
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/CplShephard" target="_blank">GitHub</a>
+    <a href="#profile-section">↑ Top</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
