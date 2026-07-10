@@ -177,7 +177,7 @@ body {
 .stat-value { font-size: 20px; font-weight: 700; }
 .stat-label { font-size: 12px; color: var(--md-sys-color-on-surface-variant); }
 
-.repos-grid, .xash-ports-grid, .devs-grid {
+.repos-grid, .devs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
@@ -201,92 +201,12 @@ body {
 .repo-meta-item { display: flex; align-items: center; gap: 4px; color: var(--md-sys-color-on-surface-variant); }
 .repo-lang-dot { width: 8px; height: 8px; border-radius: 50%; }
 
-.xash-hero-banner-custom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 24px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  background-color: var(--md-sys-color-surface-container);
-  border: 1px solid var(--md-sys-color-outline-variant);
-}
-
-.xash-hero-content { display: flex; align-items: center; gap: 16px; }
-.xash-hero-icon-container { width: 48px; height: 48px; border-radius: 12px; background-color: var(--md-sys-color-primary-container); color: var(--md-sys-color-on-primary-container); display: flex; align-items: center; justify-content: center; }
-.xash-hero-icon-container span { font-size: 28px; }
-
-.m3-port-card {
-  padding: 0 !important;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: var(--md-sys-color-surface-container-low);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  border-radius: 16px;
-}
-
-.port-img-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  background-color: var(--md-sys-color-surface-variant);
-  transition: all 0.3s ease;
-}
-
-.port-img-wrapper img {
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .m3-img-loaded { opacity: 1 !important; }
 
 .m3-img-failed {
   display: none !important;
   padding-top: 0 !important;
   height: 0 !important;
-}
-
-.port-info-block {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  position: relative;
-}
-
-.port-title { color: var(--md-sys-color-on-surface); margin-bottom: 4px; }
-.port-author { color: var(--md-sys-color-on-surface-variant); margin-bottom: 16px; }
-
-.m3-assist-chip {
-  display: inline-block;
-  width: fit-content;
-  background-color: var(--md-sys-color-surface-container-highest);
-  color: var(--md-sys-color-on-surface-variant);
-  border: 1px solid var(--md-sys-color-outline-variant);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  padding: 4px 10px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.port-img-wrapper .m3-assist-chip {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  margin-bottom: 0;
-  z-index: 2;
-  box-shadow: var(--md-sys-elevation-1);
-  backdrop-filter: blur(4px);
 }
 
 .port-actions {
@@ -368,7 +288,7 @@ md-filled-tonal-button md-icon {
 }
 
 @keyframes m3Shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-.m3-loading-shimmer { background: linear-gradient(90deg, var(--md-sys-color-surface-container) 25%, var(--md-sys-color-surface-container-highest) 37%, var(--md-sys-color-surface-container) 63%); background-size: 200% 100%; animation: m3Shimmer 1.5s infinite linear; }
+
 
 .m3-footer { background-color: var(--md-sys-color-surface-container-high); border-top: 1px solid var(--md-sys-color-outline-variant); padding: 24px; margin-top: auto; }
 .footer-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
@@ -381,9 +301,7 @@ md-filled-tonal-button md-icon {
   .profile-avatar { margin: 0 auto; }
   .m3-badge { position: absolute; top: 0; left: 0; }
 
-  .repos-grid, .xash-ports-grid, .devs-grid { grid-template-columns: 1fr !important; }
-  .xash-hero-banner-custom { flex-direction: column; align-items: stretch; }
-  .xash-hero-banner-custom md-filled-button { width: 100%; margin-top: 8px; }
+  .repos-grid, .devs-grid { grid-template-columns: 1fr !important; }
   
   .port-actions { flex-direction: row !important; }
   
